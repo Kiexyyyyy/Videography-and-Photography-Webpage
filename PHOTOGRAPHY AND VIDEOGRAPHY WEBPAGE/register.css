@@ -1,0 +1,69 @@
+body{
+display:flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+box-sizing: border-box;
+font-family: monospace;
+background-image: url('ss.jpg');
+background-size: cover;
+gap: 20px;
+}
+legend{
+color: rgb(148, 48, 194);
+font-size: 15px;
+font-weight: bold;
+font-family: 'Trebuchet MS';
+}
+form{
+width: 250px;
+}
+fieldset{
+background-color: white;
+display: flex;
+flex-direction: column;
+padding: 20px;
+display: inline-block;
+vertical-align: middle;
+}
+.title{
+display: flex;
+align-items: center;
+padding: 75px;
+background-color: #a8e6ff;
+height: 50%;
+border-radius: 20px;
+}
+.buttons{
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+
+}
+#submit, #cancel{
+width: 100px;
+border-radius: 20px;
+border: none;
+padding: 15px 15px;
+}
+#submit{
+background-color: white;
+border: #72BF78 solid 2px;
+color: #72BF78;
+transition: all 0.2s ease-in-out;
+}
+#cancel{
+background-color: white;
+color: #FF8A8A;
+border: #FF8A8A solid 2px;
+transition: all 0.2s ease-in-out;
+}
+#submit:hover{
+background-color: #72BF78;
+color: white;
+}
+#cancel:hover{
+background-color: #FF8A8A;
+color: white;
+}

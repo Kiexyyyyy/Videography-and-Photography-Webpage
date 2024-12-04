@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light background to make content stand out */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color:gray;  
+  color: #fff;
+  position: relative;
+  padding-top: 80px
+}
+nav{
+ position: relative;
+    font-size: 1.1em;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0s;       
+}
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 100px;
+  }
+  
+  nav li {
+    float: right;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: black;  
+  }
+
+.container {
+  max-width: 900px;
+  margin: 100px auto 20px auto; /* Adding top margin to avoid overlap with fixed header */
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #6D00B6; /* Matching header color */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 20px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+}
+
+h3, h4 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+ol, ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ol li, ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+
+
+ol li {
+  list-style-type: decimal;
+}
+
+/* Add some hover effects on the list items */
+ ol li:hover {
+  background-color: #f2f2f2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+main {
+  padding-top: 50px;
+  background-color: #fafafa; /* Slightly off-white background for the body */
+  font-family: 'Arial', sans-serif;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6D00B6;
+  color: white;
+  margin-top: auto;
+}
+img {
+  max-width: 100%; /* Prevents the image from exceeding its container */
+  height: auto;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Educational Web Page</title>
+        <link rel="stylesheet" href="Home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <header>
+            <h2 class="Logo">PHOTOGRAPHY AND VIDEOGRAPHY</h2>
+            <nav class="navigation">
+                 <a href="Home.html">Home</a>
+                <a href="Content.html">Content</a>
+                <a href="Advance.html">Advance Topic</a>
+                <a href="#about">About</a>
+                <button class="btnLogin-popup" onclick="window.location.href='login.html';">Login</button>   
+            </nav>           
+        </header>
+        <section>
+  <img class="mySlides" src="tt.jpg"
+  style="width:100%">
+  <img class="mySlides" src="asds.jpg"
+  style="width:100%">
+  <img class="mySlides" src="qq.jpg"
+  style="width:100%">
+</section>
+            <section class="w3-container w3-center w3-content" style="max-width:600px">
+            <h2 class="wide">Photography and videography</h2>
+            <p class="opacity"><i></i></p>
+            <p class="justify">Ever wondered how a single click can freeze a moment in time, preserving it forever? Or how a well-crafted video can transport you to a different world, immersing you in a captivating narrative? Or watched a video that transported you to another time and place?
+              In today’s digital age, where everyone is armed with a smartphone camera, the power of visual communication has never been more prominent. But there’s so much more to photography and videography than simply pointing and shooting. Through our blog, we aim to unravel the secrets behind capturing breathtaking images and crafting compelling videos. From mastering composition and lighting techniques to exploring the latest trends and tools,
+              Photography and videography are more than just capturing images or recording videos. They are powerful mediums of self-expression, communication, and documentation. Through the lens, photographers and videographers have the ability to freeze time, evoke emotions, and tell compelling stories. In our blog, we aim to explore the techniques, tools, and creative processes behind creating breathtaking visuals.</p><a href="view more contents"></a>
+          </section>
+
+          <section id="about" class="about">
+            <h1>Welcome to Photography and Videography</h1>
+            <p>At Photography and Videography, we are passionate storytellers dedicated to capturing life's most precious moments through the art of videography and photography. With years of experience and a keen eye for detail, we transform fleeting moments into lasting memories that you can cherish forever.</p>
+        
+            <h1>Our Mission</h1>
+            <p>Our mission is to provide exceptional visual content that resonates emotionally and aesthetically. We strive to exceed our clients' expectations by delivering creative, high-quality work that reflects their unique stories and visions.</p>
+
+            <H1>TEAM</H1>
+            <p>Wilky Jomuad</p>
+            <h2>Leader</h2>
+            <p>Charina Medrano</p>
+            <h2>Fundamental Designer</h2>
+            <p>Lucas Lapingcao</p>
+            <h2>Homepage Creator</h2>
+        </section>
+        
+          <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>            
+          </footer>
+          <script>
+            // Enable smooth scrolling for navigation links
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();  // Prevent the default jump behavior
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'  // This enables smooth scrolling
+        });
+    });
+});
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+
+            // Automatic Slideshow - change image every 3 seconds
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+            }
+            </script>
+    </body>
+</html>    
